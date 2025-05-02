@@ -9,7 +9,7 @@ You can also find my publications on my [Google Scholar Profile](https://scholar
 
 0. **On the relationship between Koopman operator approximations and neural ordinary differential equations for data-driven time-evolution predictions** \
    J. Buzhardt, C.R. Constante-Amores, M.D. Graham. \
-  Submitted November 2024.  In Review. [arXiv Link](https://arxiv.org/abs/2411.12940) 
+  _Chaos_. April 2025. [Paper Link](https://doi.org/10.1063/5.0249549) [arXiv Link](https://arxiv.org/abs/2411.12940) 
 
 0. **Controlled fluid transport by the collective motion of microrotors** \
    J. Buzhardt, P. Tallapragada. \
