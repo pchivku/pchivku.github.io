@@ -94,6 +94,7 @@ For instance, certain aquatic robots exhibit Chaplygin-sleigh-like dynamics, sho
 Due to their complex dynamics path tracking in such systems is not straightforward. To address this, we developed a reinforcement-learning control framework for a reduced-order model of a bio-inspired swimming robot featuring a passive appendage. Using a Chaplygin sleigh with a passive appendage as a surrogate model, we trained a policy-gradient agent to perform path tracking.
  
 <img src="/files/Overview_curr.png" alt="Rotor controls" width="400">
+<img src="/files/Other_fig.png" alt="Rotor controls" width="400">
  <video controls muted loop width="400">
     <source src="/files/Path_tracking_cs.mp4" type="video/mp4">
   </video> 
