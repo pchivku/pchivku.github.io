@@ -32,7 +32,7 @@ Once submerged (with only the lid protruding above the water), the robot exhibit
 For more details, see the following paper: 
 >Spin Swimmer: A fast, efficient and agile swimming robot \
 >P. Chivkula, P. Tallapragada. \
->IEEE Robotics and Automation Letters, 2025. [Journal link](https://doi.org/10.1109/LRA.2025.3606357)
+>IEEE Robotics and Automation Letters, 2025. [Journal link](https://doi.org/10.1109/LRA.2025.3606357) \
 >More videos [here](https://drive.google.com/file/d/1rnSlfVkf2ZhkzqRtLVeHoHoN8Eo2xuoA/view?usp=drive_link)
 
 <br/>
