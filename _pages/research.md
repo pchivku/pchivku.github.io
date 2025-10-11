@@ -11,7 +11,7 @@ Marine robots have become indispensable, serving a variety of applications rangi
 The robot design features a rigid hydrofoil body that houses an unbalanced rotor, with a flexible tail attached to the body. Specifically, we use the spin of this internal unbalanced rotor to induce oscillations in a flexible tail, as shown in the movie.
 
 <video id="myBGvid" autoplay muted loop width="400" >
-<source src="/files/Spin_rotor_small" type="video/mp4">
+<source src="/files/Spin_rotor_small.mp4" type="video/mp4">
 </video>
 <video id="myBGvid" autoplay muted loop width="400" >
 <source src="/files/Spin_movie_modes_small.mp4" type="video/mp4">
