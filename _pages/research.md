@@ -5,46 +5,71 @@ permalink: /research/
 author_profile: true
 ---
  <hr style="width:96%;border:solid 1px black;color:#FFFF00;height:1px"> 
-# Controlled density transport
-The problem of controlling distributions of states has many applications, including uncertainty propagation and quantification, stochastic control and motion planning under uncertainty, controlled fluid transport, and control of distributed multiagent systems. In such problems, the distribution of states is modelled as a probability density function.  The animations below illustrate this idea on a Duffing system.  The left figure shows the time evolution of a single state in state space; the right figure shows the evolution of an ensemble of states, which are modelled as a probability density function. 
+# Spin Swimmer: A fast, efficient and agile swimming robot
+
+Marine robots have become indispensable, serving a variety of applications ranging from surveillance to exploration and across a wide range of missions. Fish serve as a natural source of inspiration, having evolved efficient ways to move through water. To replicate and understand this efficiency, engineers and scientists have often attempted to mimic the kinematics of fish-like undulatory motion. While most existing designs rely on mechanical linkages or cable-driven systems involving multiple rigid actuators, in this work, we take a fundamentally new approach. We harness ideas from nonlinear dynamics and design a robot based on the concept of parametric resonance. Our experimental results demonstrate that this one of the most efficient bio-inspired swimming robots. 
+The robot design features a rigid hydrofoil body that houses an unbalanced rotor, with a flexible tail attached to the body. Specifically, we use the spin of this internal unbalanced rotor to induce oscillations in a flexible tail, as shown in the movie.
 
 <video id="myBGvid" autoplay muted loop width="400" >
-<source src="/files/duffing.mp4" type="video/mp4">
+<source src="/files/Spin_movie_rotor" type="video/mp4">
 </video>
 <video id="myBGvid" autoplay muted loop width="400" >
-<source src="/files/duffing_densprop.mp4" type="video/mp4">
+<source src="/files/Spin_movie_modes.mp4" type="video/mp4">
 </video>
 
-To model the time evolution of density functions, we use ideas from the operator-theoretic view of dynamical systems.  The Perron-Frobenius operator is the operator which propagates density functions forward in time under the flow of a dynamical system.  This operator is the adjoint of the Koopman operator, which propagates observable functions along trajectories of a dynamical system.  This relationship enables the use of data-driven methods, such as extended dynamic mode decomposition (EDMD) for constructing finite dimensional approximations of the operator.
+Once submerged (with only the lid protruding above the water), the robot exhibits different modes of oscillation at various rotor spin frequencies, as seen in the above movie to the right showing the first and second modes. Furthermore, the robot achieves a high swimming speed of 2.4 body lengths per second (BL/s) with a low cost of transport of 1.02, as shown in the video below. 
 
-For a controlled dynamical system, this method yields a high-dimensional bilinear system for the density evolution.  We solve an optimal control problem on this system to steer an initial distribution of states to a desired target.  As an application, we consider the problem of a rotor-driven Stokes flow, where the torques on a pair of micro-rotors are controlled to manipulate a blob of fluid particles toward a target, as shown below.  The plot on the right shows the optimal rotor torques of the left and right rotors over time. 
 
-<div style="display: flex; align-items: center;">
-  <video id="myBGvid" autoplay muted loop width="400">
-    <source src="/files/rotlets_free_2f_5s_PF.mp4" type="video/mp4">
-  </video>
-  <img src="/files/gammscratch.png" alt="Rotor controls" width="400">
-</div>
+<!-- <div style="display: flex; align-items: center;"> -->
+<video id="myBGvid" autoplay muted loop width="400">
+<source src="/files/Spin_movie_strt.mp4" type="video/mp4">
+</video>
+<video id="myBGvid" autoplay muted loop width="400" >
+<source src="/files/Spin_movie_underwater.mp4" type="video/mp4">
+</video>
+
 
 For more details, see the following paper: 
->Controlled density transport using Perron Frobenius generators \
->J. Buzhardt, P. Tallapragada. \
->IEEE Conference on Decision and Control, 2023. [Preprint](/files/cdc2023_bt.pdf) 
+>Spin Swimmer: A fast, efficient and agile swimming robot \
+>P. Chivkula, P. Tallapragada. \
+>IEEE Robotics and Automation Letters, 2025. [Journal link](https://doi.org/10.1109/LRA.2025.3606357) 
 
 <br/>
  <hr style="width:96%;border:solid 1px black;color:#FFFF00;height:1px"> 
 
-# Rolling, Jumping Robot
-Littlewood's hopping hoop is a classic dynamics example, which consists of a lightweight hoop with a heavy eccentric mass.  This simple mechanism is known to exhibit a hopping behavior when rolled fast on flat ground or from rest on an incline, as shown in the video below. 
-<div style="display: flex; align-items: center;">
-  <video controls muted loop width="300">
-    <source src="/files/PassiveHoop.mp4" type="video/mp4">
-  </video> 
-  <img src="/files/PassiveHoop.png" alt="Rotor controls" width="400">
-  <img src="/files/HoopFBD_simple.png" alt="Rotor controls" width="200">
-</div>
+# Bistable swimmer
+Inspired by the remarkable maneuverability of fish, roboticists and engineers have sought to leverage flexible and multistable mechanisms to enhance the maneuverability of bio-inspired robots. In line with this we developed a novel  underactuated fish-like robot with a passive bistable tail. This robot design
+combines a hydrofoil with a bistable tail that features a double-well elastic potential and is
+controlled by a single actuator — the internal rotor, as shown in the video below.
 
-This hopping behaviour is due to a lifting effect on the hoop created by the large centripetal acceleration of the offset mass, as shown in the schematic above.  Inspired by this, we design a robot to roll and jump from flat ground by actuating a heavy pendulum at high speed in order to jump.  As shown in the video below, our robot is able to achieve vertical jumps of 2.4 body lengths.  
+<video id="myBGvid" autoplay muted loop width="800">
+<source src="/files/Bistable_rotor.mp4" type="video/mp4">
+</video>
+By tuning the amplitude and frequency of the input to the
+rotor, the robot transitions between distinct gaits, enabling both straight-line swimming and
+powered turning, the latter arising from oscillations about a deflected tail position. This is illustrated in the video below.
+
+<video id="myBGvid" autoplay muted loop width="800">
+<source src="/files/Bistable_gaits.mp4" type="video/mp4">
+</video>
+
+This robot can swim at a top speed of 2.1 BL/s and can perform agile turning maneuvers.
+
+<video id="myBGvid" autoplay muted loop width="800">
+<source src="/files/Bistable_strt.mp4" type="video/mp4">
+</video>
+
+
+
+For more details, see the following papers:  
+>Hopping potential wells and gait switching in a fish-like robot with a bistable tail \
+>P. Chivkula, C. Rodwell, P. Tallapragada. \
+>_Extreme Mechanics Letters_ 72, 102239 November 2024. [Journal Link](https://doi.org/10.1016/j.eml.2024.102239) 
+
+
+# Rolling, Jumping Robot
+Inspired by Littlewood’s hopping hoop—a classic dynamics example involving a lightweight ring with a heavy eccentric mass that hops when rolled rapidly or released on an incline as shown in this [video](/files/Passive_hoop.mp4)
+This hopping behaviour is due to a lifting effect on the hoop created by the large centripetal acceleration of the offset mass.  Building on this idea, we designed a robot that rolls and jumps from flat ground by actuating an internal pendulum at high speed. As shown in the video below, our robot is able to achieve vertical jumps of 2.4 body lengths.  
 <video controls muted loop width="600" >
 <source src="/files/vertonly.mp4" type="video/mp4">
 </video>
@@ -57,60 +82,24 @@ Additionally, the robot can clear large horizontal distances while in air by ach
 For more details, see the following papers:  
 >A Pendulum-Driven Legless Rolling Jumping Robot\
 >J. Buzhardt, P. Chivkula, P. Tallapragada. \
->IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023 [Preprint](/files/IROS2023_bct.pdf) 
-
->A Passive Jumping Mechanism\
->P. Tallapragada, J. Buzhardt, R. Seney. \
-> 2019 Dynamic Systems and Control Conference (DSCC) ASME. October 2019. [Paper Link](https://doi.org/10.1115/DSCC2019-9194) | [Preprint](/files/tbs_dscc2019.pdf)
+>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023 [Conference article](https://doi.org/10.1109/IROS55552.2023.10342513) 
 
 <br/>
  <hr style="width:96%;border:solid 1px black;color:#FFFF00;height:1px"> 
 
-# Low Reynolds number swimming
-Motion at zero Reynolds number is governed by the Stokes equations, where viscous effects are dominant relative to inertial effects.  The linearity and time-independence of the Stokes equations also lead to a kinematic reversibility known as the Scallop theorem, which states that reciprocal motions of a body will not produce a net translation in a Stokes flow.  This statement, gets its name from the idea that a scallop would not be able to swim in a low Reynolds number setting since it possesses only a single degree of freedom and is thus only capable of such reciprocal motions.  This eliminates many aquatic locomotion strategies which are common at larger scales, such as periodic flapping or undulating.  This also helps to explain the effectiveness of simple, continuous rotation for locomotion, as this does not suffer from the reciprocity described in the scallop theorem. 
+# Curriculum Reinforcement Learning
 
-We study the motion of simple achiral swimmers composed of three rigidly connected spheres in a 90 degree bend, pictured below.  This is one of the simplest geometries which can exhibit a net translation due to an applied torque, and thus can be driven by a torque induced through a periodically rotating magnetic field.  
-<div style="display: flex; align-items: center;">
-<img src="/files/Microswimmers3Sphere.png" alt="Rotor controls" width="800">
-</div>
-We develop a simulation strategy based on the Stokesian dynamics algorithm, which allows us to study the single swimmer motion, interacting groups of these swimmers, and the corresponding fluid velocity fields.  The fluid velocity field produced by a single swimmer is shown below, when subjected to a periodically rotating magnetic field. 
-<div style="display: flex; align-items: center;">
-<img src="/files/swimmer_velocityfields.PNG" alt="Rotor controls" width="800">
-</div>
-When two swimmers are present, hydrodynamic interactions due to this rotational velocity field leads to the swimmers taking helical trajectories as they spiral about one another, as shown in the animations below. 
-<div style="display: flex; align-items: center;">
-  <video controls muted loop width="400">
-    <source src="/files/Movie_2Swim2023_3d.mp4" type="video/mp4" >
+Underactuated mechanical systems with nonholonomic constraints play a key role in bio-inspired robotics, from snake-like to fish-like designs, and serve as effective reduced-order models for studying their locomotion dynamics.
+For instance, certain aquatic robots exhibit Chaplygin-sleigh-like dynamics, showing figure-eight limit cycles in reduced velocity space under periodic torque, as confirmed by both experiments and simulations.
+Due to their complex dynamics path tracking in such systems is not straightforward. To address this, we developed a reinforcement-learning control framework for a reduced-order model of a bio-inspired swimming robot featuring a passive appendage. Using a Chaplygin sleigh with a passive appendage as a surrogate model, we trained a policy-gradient agent to perform path tracking.
+ 
+<img src="/files/Overview_curr.png" alt="Rotor controls" width="400">
+ <video controls muted loop width="400">
+    <source src="/files/Path_tracking_cs.mp4" type="video/mp4">
   </video> 
-    <video controls muted loop width="400">
-    <source src="/files/Movie_2Swim2023_xz.mp4" type="video/mp4">
-  </video> 
-</div>
-The same is true when a larger group of swimmers is present.  The simulations below show the trajectories of a group of 16 interacting swimmers.  
-<div style="display: flex; align-items: center;">
-  <video controls muted loop width="900">
-    <source src="/files/Movie_16Swim2023_slow.mp4" type="video/mp4" >
-  </video> 
-</div>
-
-Additionally, these hydrodynamic interactions can be utilized to contactlessly manipulate a passive particle to drive it in a desired direction.  This is demonstrated in the animation below.  This control is achieved by switching the orientation and frequency of the applied magnetic field to alternatingly drive the swimmer and the particle.  
-<div style="display: flex; align-items: center;">
-  <video controls muted loop width="400">
-    <source src="/files/swimmerparticle_controlmovie.mp4" type="video/mp4" >
-  </video> 
-  <img src="/files/switching_particlecontrol.PNG" alt="Rotor controls" width="600">
-</div>
+To accelerate learning and embed prior structure, we pre-trained the actor network using known system physics and used it to initialize the agent’s training. We also devised a curriculum-based training strategy to further speed up learning and enable the model to track trajectories across a range of paths and system parameters.
 
 For more details, see the following papers:  
->Dynamics of groups of magnetically driven artificial microswimmers\
->J. Buzhardt, P. Tallapragada. \
->_Physical Review E_ 100, 033106 September 2019. [Journal Link](https://www.doi.org/10.1103/PhysRevE.100.033106) 
-
->Magnetically actuated artificial microswimmers as mobile microparticle manipulatorss\
->J. Buzhardt, P. Tallapragada. \
->_ASME Letters in Dynamic Systems and Control,_ 1:1, January 2021. [Journal Link](https://doi.org/10.1115/1.4046581)
-
-
-
-## Offroad vehicle navigation
-coming soon
+>A Pendulum-Driven Legless Rolling Jumping Robot\
+>P. Chivkula, C. Rodwell, P. Tallapragada. \
+>Modeling, Estimation and Control Conference (MECC), 2022 [Conference article](https://doi.org/10.1016/j.ifacol.2022.11.207) 
