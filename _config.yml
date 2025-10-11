@@ -9,13 +9,13 @@ minimal_mistakes_skin    : "default"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jake Buzhardt"
+title                    : "Prashanth Chivkula"
 title_separator          : "-"
-name                     : &name "Jake Buzhardt"
+name                     : &name "Prashanth Chivkula"
 description              : &description "personal description"
-url                      : https://jbuzhar.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://pchivku.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "jbuzhar/jbuzhar.github.io"
+repository               : "pchivku/pchivku.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -59,7 +59,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : jakebuzhardt
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -82,13 +82,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Jake Buzhardt"
-  avatar           : "jbuzhar.jpg"
-  bio              : "Postdoctoral Researcher at University of Wisconsin-Madison"
-  location         : "Madison, WI, USA"
+  name             : "Prashanth Chivkula" # (defaults to site.title)
+  avatar           : "Prashanth_img.jpg"
+  bio              : "I make robots that swim"
+  location         : "Athens, GA, USA"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=R4MrBr4AAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=1_VCHJAAAAAJ&hl=en&authuser=1"
   email            :
   researchgate     :  #"https://www.researchgate.net/profile/Jake-Buzhardt"
   uri              :
@@ -98,13 +98,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "jbuzhar"
+  github           : "pchivku"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/jake-buzhardt/"
+  linkedin         : "https://www.linkedin.com/in/prashanth-chivkula-6b36aa142/"
   orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
