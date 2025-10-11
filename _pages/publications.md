@@ -19,7 +19,7 @@ You can also find my publications on my [Google Scholar Profile](https://scholar
 
 0. **A Pendulum-Driven Legless Rolling Jumping Robot** \
    J. Buzhardt, P. Chivkula, P. Tallapragada. \
-   2023 IEEE/RSJ International Conference on Intelligent Robots and Systems. [Paper Link](https://doi.org/10.1109/IROS55552.2023.10342513)  
+   _2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)_. [Paper Link](https://doi.org/10.1109/IROS55552.2023.10342513)  
    <!-- # -->
 0. **Curriculum-based reinforcement learning for path tracking in an underactuated nonholonomic system** \
    P. Chivkula, C. Rodwell, P. Tallapragada. \
