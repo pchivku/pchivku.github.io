@@ -32,7 +32,7 @@ Once submerged (with only the lid protruding above the water), the robot exhibit
 For more details, see the following paper: 
 >Spin Swimmer: A fast, efficient and agile swimming robot \
 >P. Chivkula, P. Tallapragada. \
->IEEE Robotics and Automation Letters, 2025. [Journal link](https://doi.org/10.1109/LRA.2025.3606357) \
+>_IEEE Robotics and Automation Letters_, 2025. [Journal link](https://doi.org/10.1109/LRA.2025.3606357) \
 >More videos [here](https://drive.google.com/file/d/1rnSlfVkf2ZhkzqRtLVeHoHoN8Eo2xuoA/view?usp=drive_link)
 
 <br/>
@@ -83,7 +83,7 @@ Additionally, the robot can clear large horizontal distances while in air by ach
 For more details, see the following papers:  
 >A Pendulum-Driven Legless Rolling Jumping Robot\
 >J. Buzhardt, P. Chivkula, P. Tallapragada. \
->IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023 [Conference article](https://doi.org/10.1109/IROS55552.2023.10342513) 
+>_IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)_, 2023 [Conference article](https://doi.org/10.1109/IROS55552.2023.10342513) 
 
 <br/>
  <hr style="width:96%;border:solid 1px black;color:#FFFF00;height:1px"> 
@@ -104,4 +104,4 @@ To accelerate learning and embed prior structure, we pre-trained the actor netwo
 For more details, see the following papers:  
 >A Pendulum-Driven Legless Rolling Jumping Robot\
 >P. Chivkula, C. Rodwell, P. Tallapragada. \
->Modeling, Estimation and Control Conference (MECC), 2022 [Conference article](https://doi.org/10.1016/j.ifacol.2022.11.207) 
+>_Modeling, Estimation and Control Conference (MECC)_, 2022 [Conference article](https://doi.org/10.1016/j.ifacol.2022.11.207) 
