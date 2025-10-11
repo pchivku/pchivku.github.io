@@ -11,10 +11,10 @@ Marine robots have become indispensable, serving a variety of applications rangi
 The robot design features a rigid hydrofoil body that houses an unbalanced rotor, with a flexible tail attached to the body. Specifically, we use the spin of this internal unbalanced rotor to induce oscillations in a flexible tail, as shown in the movie.
 
 <video id="myBGvid" autoplay muted loop width="400" >
-<source src="/files/Spin_movie_rotor" type="video/mp4">
+<source src="/files/Spin_movie_rotor_small" type="video/mp4">
 </video>
 <video id="myBGvid" autoplay muted loop width="400" >
-<source src="/files/Spin_movie_modes.mp4" type="video/mp4">
+<source src="/files/Spin_movie_modes_small.mp4" type="video/mp4">
 </video>
 
 Once submerged (with only the lid protruding above the water), the robot exhibits different modes of oscillation at various rotor spin frequencies, as seen in the above movie to the right showing the first and second modes. Furthermore, the robot achieves a high swimming speed of 2.4 body lengths per second (BL/s) with a low cost of transport of 1.02, as shown in the video below. 
@@ -22,10 +22,10 @@ Once submerged (with only the lid protruding above the water), the robot exhibit
 
 <!-- <div style="display: flex; align-items: center;"> -->
 <video id="myBGvid" autoplay muted loop width="400">
-<source src="/files/Spin_movie_strt.mp4" type="video/mp4">
+<source src="/files/Spin_movie_strt_small.mp4" type="video/mp4">
 </video>
 <video id="myBGvid" autoplay muted loop width="400" >
-<source src="/files/Spin_movie_underwater.mp4" type="video/mp4">
+<source src="/files/Spin_movie_underwater_small.mp4" type="video/mp4">
 </video>
 
 
@@ -43,14 +43,14 @@ combines a hydrofoil with a bistable tail that features a double-well elastic po
 controlled by a single actuator — the internal rotor, as shown in the video below.
 
 <video id="myBGvid" autoplay muted loop width="800">
-<source src="/files/Bistable_rotor.mp4" type="video/mp4">
+<source src="/files/Bistable_rotor_small.mp4" type="video/mp4">
 </video>
 By tuning the amplitude and frequency of the input to the
 rotor, the robot transitions between distinct gaits, enabling both straight-line swimming and
 powered turning, the latter arising from oscillations about a deflected tail position. This is illustrated in the video below.
 
 <video id="myBGvid" autoplay muted loop width="800">
-<source src="/files/Bistable_gaits.mp4" type="video/mp4">
+<source src="/files/Bistable_gaits_small.mp4" type="video/mp4">
 </video>
 
 This robot can swim at a top speed of 2.1 BL/s and can perform agile turning maneuvers.
