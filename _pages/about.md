@@ -8,7 +8,7 @@ My PhD dissertation focused on developing novel underwater swimming robots, leve
 
 Over the course of my PhD, I designed and built several underactuated bio-inspired swimming robots. These include a bistable swimmer that harnesses elastic instability and rapid state transitions to achieve multiple fish-like gaits and enhanced maneuverability. Furthermore, I developed one of the most efficient bio-inspired swimming robots based on the concept of parametric resonance. In addition, I worked on several other projects, including the development of a novel jumping robot.
 
-Links to my robots can be found [here]().
+Links to my robots can be found [here](https://pchivku.github.io/research/).
 
 I am currently looking for postdoctoral research opportunities in Robotics. 
 The best way to reach me is by email:
