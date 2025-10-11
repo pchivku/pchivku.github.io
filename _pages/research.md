@@ -10,10 +10,10 @@ author_profile: true
 Marine robots have become indispensable, serving a variety of applications ranging from surveillance to exploration and across a wide range of missions. Fish serve as a natural source of inspiration, having evolved efficient ways to move through water. To replicate and understand this efficiency, engineers and scientists have often attempted to mimic the kinematics of fish-like undulatory motion. While most existing designs rely on mechanical linkages or cable-driven systems involving multiple rigid actuators, in this work, we take a fundamentally new approach. We harness ideas from nonlinear dynamics and design a robot based on the concept of parametric resonance. Our experimental results demonstrate that this one of the most efficient bio-inspired swimming robots. 
 The robot design features a rigid hydrofoil body that houses an unbalanced rotor, with a flexible tail attached to the body. Specifically, we use the spin of this internal unbalanced rotor to induce oscillations in a flexible tail, as shown in the movie.
 
-<video id="myBGvid" autoplay muted loop width="400" >
+<video id="myBGvid" autoplay muted loop width="500" >
 <source src="/files/Spin_rotor_small.mp4" type="video/mp4">
 </video>
-<video id="myBGvid" autoplay muted loop width="400" >
+<video id="myBGvid" autoplay muted loop width="500" >
 <source src="/files/Spin_movie_modes_small.mp4" type="video/mp4">
 </video>
 
@@ -21,10 +21,10 @@ Once submerged (with only the lid protruding above the water), the robot exhibit
 
 
 <!-- <div style="display: flex; align-items: center;"> -->
-<video id="myBGvid" autoplay muted loop width="400">
+<video id="myBGvid" autoplay muted loop width="500">
 <source src="/files/Spin_swim_strt_small.mp4" type="video/mp4">
 </video>
-<video id="myBGvid" autoplay muted loop width="400" >
+<video id="myBGvid" autoplay muted loop width="500" >
 <source src="/files/Spin_movie_underwater_small.mp4" type="video/mp4">
 </video>
 
@@ -69,13 +69,13 @@ For more details, see the following papers:
 
 # Rolling, Jumping Robot
 Inspired by Littlewood’s hopping hoop—a classic dynamics example involving a lightweight ring with a heavy eccentric mass that hops when rolled rapidly or released on an incline as shown in this [video](/files/Passive_hoop.mp4)
-This hopping behaviour is due to a lifting effect on the hoop created by the large centripetal acceleration of the offset mass.  Building on this idea, we designed a robot that rolls and jumps from flat ground by actuating an internal pendulum at high speed. As shown in the video below, our robot is able to achieve vertical jumps of 2.4 body lengths.  
-<video controls muted loop width="600" >
+This hopping behaviour is due to a lifting effect on the hoop created by the large centripetal acceleration of the offset mass.  Building on this idea, we designed a robot that rolls and jumps from flat ground by actuating an internal pendulum at high speed. As shown in the video below, our robot is capable of achieving vertical jumps of 2.4 body lengths.  
+<video controls autoplay muted loop width="600" >
 <source src="/files/vertonly.mp4" type="video/mp4">
 </video>
 
 Additionally, the robot can clear large horizontal distances while in air by achieving a high rolling velocity before initiating a jump.  As shown in the video below, the robot clears over 6 body lengths in air and is able to achieve multiple jumps with minimal recovery time.  
-<video controls muted loop width="600" >
+<video controls autoplay muted loop width="600" >
 <source src="/files/horonly.mp4" type="video/mp4">
 </video>
 
@@ -95,7 +95,7 @@ Due to their complex dynamics path tracking in such systems is not straightforwa
  
 <img src="/files/Overview_curr.png" alt="Rotor controls" width="400">
 <img src="/files/Other_fig.png" alt="Rotor controls" width="400">
- <video controls muted loop width="400">
+ <video controls autoplay muted loop width="400">
     <source src="/files/Path_tracking_cs.mp4" type="video/mp4">
   </video> 
 To accelerate learning and embed prior structure, we pre-trained the actor network using known system physics and used it to initialize the agent’s training. We also devised a curriculum-based training strategy to further speed up learning and enable the model to track trajectories across a range of paths and system parameters.
