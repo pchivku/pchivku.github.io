@@ -2,13 +2,16 @@
 permalink: /
 ---
 
-My name is Jake Buzhardt, and I am a postdoctoral researcher in the Department of Chemical & Biological Engineering at the University of Wisconsin-Madison, working with [Prof. Michael D. Graham](https://grahamgroup.che.wisc.edu/). 
+My name is Prashanth Chivkula, and I completed my PhD in Electrical Engineering in 2025 at Clemson University, where I worked with Phanindra Tallapragada in the [Applied Dynamical Systems Lab](http://ptallap.people.clemson.edu/).
+My research interests lie broadly in Robotics, Bio-inspired Robotics, and Nonlinear dynamics. 
+My Ph.D. dissertation focused on developing novel underwater swimming robots, exploring how principles of multistability and resonance can be leveraged to achieve efficient and maneuverable locomotion for autonomous underwater vehicles.
 
-I completed my PhD in Mechanical Engineering in 2023 at Clemson University, where I worked with Phanindra Tallapragada in the [Applied Dynamical Systems Lab](http://ptallap.people.clemson.edu/).
+Over the course of my work, I designed and built several underactuated bio-inspired swimming robots. These include a bistable swimmer that harnesses elastic instability and rapid state transitions to achieve multiple fish-like gaits and enhanced maneuverabilityt. Furthermore, I developed one of the most efficient bio-inspired swimming robots based on the concept of parametric resonance. In addition, I worked on several other projects, including the development of a novel jumping robot.
 
-Broadly, my research interests are the modeling and control of nonlinear dynamical systems.  My current work is focused on data-driven methods for reduced order modeling in fluid dynamics applications. During my PhD, I worked on applications such as the control of groups of interacting microswimming robots and the control of offroad vehicles.  Within these contexts, I have studied problems of data-driven and uncertainty-aware control, parameter estimation, trajectory optimization, and deep reinforcement learning  I am also particularly interested in data-driven modeling and control strategies based on finite dimensional approximations of the Koopman and Perron-Frobenius operators.   
+Links to my robots can be found [here]().
 
+I am currently looking for postdoctoral research opportunities in Robotics. 
 The best way to reach me is by email:
 
-- jbuzhar`[at]`gmail.com 
-- buzhardt`[at]`wisc.edu
+- pchivku`[at]`g.clemson.edu 
+
