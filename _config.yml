@@ -83,7 +83,7 @@ analytics:
 # Site Author
 author:
   name             : "Prashanth Chivkula" # (defaults to site.title)
-  avatar           : "Prashanth_img.jpg"
+  avatar           : "Prashanth_img_blur.jpg"
   bio              : "I make robots that swim and jump"
   location         : "Athens, GA, USA"
   employer         :
