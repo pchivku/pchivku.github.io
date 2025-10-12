@@ -5,27 +5,28 @@ permalink: /research/
 author_profile: true
 ---
  <hr style="width:96%;border:solid 1px black;color:#FFFF00;height:1px"> 
-# Spin Swimmer: A fast, efficient and agile swimming robot
+# Spin Swimmer: A fast, efficient, and agile swimming robot
 
-Marine robots have become indispensable, serving a variety of applications ranging from surveillance to exploration and across a wide range of missions. Fish serve as a natural source of inspiration, having evolved efficient ways to move through water. To replicate and understand this efficiency, engineers and scientists have often attempted to mimic the kinematics of fish-like undulatory motion. While most existing designs rely on mechanical linkages or cable-driven systems involving multiple rigid actuators, in this work, we take a fundamentally new approach. We harness ideas from nonlinear dynamics and design a robot based on the concept of parametric resonance. Our experimental results demonstrate that this one of the most efficient bio-inspired swimming robots. 
-The robot design features a rigid hydrofoil body that houses an unbalanced rotor, with a flexible tail attached to the body. Specifically, we use the spin of this internal unbalanced rotor to induce oscillations in a flexible tail, as shown in the movie.
+Marine robots have become indispensable, serving a variety of applications ranging from surveillance to exploration and across a wide range of missions. Fish serve as a natural source of inspiration, having evolved efficient ways to move through water. To replicate and understand this efficiency, engineers and scientists have often attempted to mimic the kinematics of fish-like undulatory motion. While most existing designs rely on mechanical linkages or cable-driven systems involving multiple rigid actuators, in this work, we take a fundamentally new approach. We harness ideas from nonlinear dynamics and design a robot based on the concept of parametric resonance. Our experimental results demonstrate that this one of the most efficient bio-inspired swimming robots.
+The robot achieves a high swimming speed of 2.4 body lengths per second (BL/s) with a low cost of transport of 1.02, as shown in the video below. 
+
 
 <video id="myBGvid" autoplay muted loop width="800" >
-<source src="/files/Spin_rotor_small.mp4" type="video/mp4">
-</video>
-<video id="myBGvid" autoplay muted loop width="800" >
-<source src="/files/Spin_movie_modes_small.mp4" type="video/mp4">
-</video>
-
-Once submerged (with only the lid protruding above the water), the robot exhibits different modes of oscillation at various rotor spin frequencies, as seen in the above movie to the right showing the first and second modes. Furthermore, the robot achieves a high swimming speed of 2.4 body lengths per second (BL/s) with a low cost of transport of 1.02, as shown in the video below. 
-
-
-<!-- <div style="display: flex; align-items: center;"> -->
-<video id="myBGvid" autoplay muted loop width="800">
 <source src="/files/Spin_swim_strt_small.mp4" type="video/mp4">
 </video>
 <video id="myBGvid" autoplay muted loop width="800" >
 <source src="/files/Spin_movie_underwater_small.mp4" type="video/mp4">
+</video>
+
+The robot design features a rigid hydrofoil body that houses an unbalanced rotor, with a flexible tail attached to the body. Specifically, we use the spin of this internal unbalanced rotor to induce oscillations in a flexible tail, as shown in the first video below.
+Once submerged (with only the lid protruding above the water), the robot exhibits different modes of oscillation at various rotor spin frequencies, as seen in the second video below, showing the first and second modes. 
+
+<!-- <div style="display: flex; align-items: center;"> -->
+<video id="myBGvid" autoplay muted loop width="800">
+<source src="/files/Spin_rotor_small.mp4" type="video/mp4">
+</video>
+<video id="myBGvid" autoplay muted loop width="800" >
+<source src="/files/Spin_movie_modes_small.mp4" type="video/mp4">
 </video>
 
 
