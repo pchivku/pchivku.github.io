@@ -18,7 +18,7 @@ The robot achieves a high swimming speed of 2.4 body lengths per second (BL/s) w
 <source src="/files/Spin_movie_underwater_small.mp4" type="video/mp4">
 </video>
 
-The robot design features a rigid hydrofoil body that houses an unbalanced rotor, with a flexible tail attached to the body. Specifically, we use the spin of this internal unbalanced rotor to induce oscillations in a flexible tail, as shown in the first video below.
+The robot design features a rigid hydrofoil body that houses an unbalanced rotor, with a flexible tail attached to the body. Specifically, we use the spin of this internal unbalanced rotor to induce oscillations in a flexible tail, as illustrated in the first video below.
 Once submerged (with only the lid protruding above the water), the robot exhibits different modes of oscillation at various rotor spin frequencies, as seen in the second video below, showing the first and second modes. 
 
 <!-- <div style="display: flex; align-items: center;"> -->
@@ -70,7 +70,7 @@ For more details, see the following papers:
 
 
 # Rolling, Jumping Robot
-Inspired by Littlewood’s hopping hoop—a classic dynamics example involving a lightweight ring with a heavy eccentric mass that hops when rolled rapidly or released on an incline as shown in this [video](/files/Passive_hoop.mp4)
+Inspired by Littlewood’s hopping hoop—a classic dynamics example involving a lightweight ring with a heavy eccentric mass that hops when rolled rapidly or released on an incline as shown in this [video](/files/Passive_hoop.mp4).
 This hopping behaviour is due to a lifting effect on the hoop created by the large centripetal acceleration of the offset mass.  Building on this idea, we designed a robot that rolls and jumps from flat ground by actuating an internal pendulum at high speed. As shown in the video below, our robot is capable of achieving vertical jumps of 2.4 body lengths.  
 <video controls autoplay muted loop width="600" >
 <source src="/files/vertonly.mp4" type="video/mp4">
