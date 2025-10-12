@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
  <hr style="width:96%;border:solid 1px black;color:#FFFF00;height:1px"> 
-# Spin Swimmer: A fast, efficient, and agile swimming robot
+# Spin Swimmer: A Fast, Efficient and Agile Fish-like Robot
 
 Marine robots have become indispensable, serving a variety of applications ranging from surveillance to exploration and across a wide range of missions. Fish serve as a natural source of inspiration, having evolved efficient ways to move through water. To replicate and understand this efficiency, engineers and scientists have often attempted to mimic the kinematics of fish-like undulatory motion. While most existing designs rely on mechanical linkages or cable-driven systems involving multiple rigid actuators, in this work, we take a fundamentally new approach. We harness ideas from nonlinear dynamics and design a robot based on the concept of parametric resonance. Our experimental results demonstrate that this one of the most efficient bio-inspired swimming robots.
 The robot achieves a high swimming speed of 2.4 body lengths per second (BL/s) with a low cost of transport of 1.02, as shown in the video below. 
@@ -31,7 +31,7 @@ Once submerged (with only the lid protruding above the water), the robot exhibit
 
 
 For more details, see the following paper: 
->Spin Swimmer: A fast, efficient and agile swimming robot \
+>Spin Swimmer: A Fast, Efficient and Agile Fish-Like Robot \
 >P. Chivkula, P. Tallapragada. \
 >_IEEE Robotics and Automation Letters_, 2025. [Journal link](https://doi.org/10.1109/LRA.2025.3606357) \
 >More videos [here](https://drive.google.com/file/d/1rnSlfVkf2ZhkzqRtLVeHoHoN8Eo2xuoA/view?usp=drive_link)
@@ -39,7 +39,7 @@ For more details, see the following paper:
 <br/>
  <hr style="width:96%;border:solid 1px black;color:#FFFF00;height:1px"> 
 
-# Bistable swimmer
+# Bistable Swimmer
 Inspired by the remarkable maneuverability of fish, roboticists and engineers have sought to leverage flexible and multistable mechanisms to enhance the maneuverability of bio-inspired robots. In line with this we developed a novel  underactuated fish-like robot with a passive bistable tail. This robot design
 combines a hydrofoil with a bistable tail that features a double-well elastic potential and is
 controlled by a single actuator — the internal rotor, as shown in the video below.
