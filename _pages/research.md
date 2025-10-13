@@ -7,7 +7,7 @@ author_profile: true
  <hr style="width:96%;border:solid 1px black;color:#FFFF00;height:1px"> 
 # Spin Swimmer: A Fast, Efficient and Agile Fish-like Robot
 
-Marine robots have become indispensable, serving a variety of applications ranging from surveillance to exploration and across a wide range of missions. Fish serve as a natural source of inspiration, having evolved efficient ways to move through water. To replicate and understand this efficiency, engineers and scientists have often attempted to mimic the kinematics of fish-like undulatory motion. While most existing designs rely on mechanical linkages or cable-driven systems involving multiple rigid actuators, in this work, we take a fundamentally new approach. We harness ideas from nonlinear dynamics and design a robot based on the concept of parametric resonance. Our experimental results demonstrate that this one of the most efficient bio-inspired swimming robots.
+Marine robots play a vital role in modern ocean operations, supporting a wide range of missions such as surveillance, scientific research, and deep-sea exploration. Fish serve as a natural source of inspiration, having evolved efficient ways to move through water. To replicate and understand this efficiency, engineers and scientists have often attempted to mimic the kinematics of fish-like undulatory motion. While most existing designs rely on mechanical linkages or cable-driven systems involving multiple rigid actuators, our work takes a fundamentally new approach. We harness ideas from nonlinear dynamics and design a robot based on the concept of parametric resonance. Our experimental results demonstrate that this is one of the most efficient bio-inspired swimming robots.
 The robot achieves a high swimming speed of 2.4 body lengths per second (BL/s) with a low cost of transport of 1.02, as shown in the video below. 
 
 
@@ -40,7 +40,7 @@ For more details, see the following paper:
  <hr style="width:96%;border:solid 1px black;color:#FFFF00;height:1px"> 
 
 # Bistable Swimmer
-Inspired by the remarkable maneuverability of fish, roboticists and engineers have sought to leverage flexible and multistable mechanisms to enhance the maneuverability of bio-inspired robots. In line with this we developed a novel  underactuated fish-like robot with a passive bistable tail. This robot design
+Inspired by the remarkable maneuverability of fish, roboticists and engineers have sought to leverage flexible and multistable mechanisms to enhance the maneuverability of bio-inspired robots. In line with this, we developed a novel  underactuated fish-like robot with a passive bistable tail. This robot design
 combines a hydrofoil with a bistable tail that features a double-well elastic potential and is
 controlled by a single actuator — the internal rotor, as shown in the video below.
 
@@ -70,13 +70,13 @@ For more details, see the following papers:
 
 
 # Rolling, Jumping Robot
-Inspired by Littlewood’s hopping hoop—a classic dynamics example involving a lightweight ring with a heavy eccentric mass that hops when rolled rapidly or released on an incline as shown in this [video](/files/Passive_hoop.mp4).
+Inspired by Littlewood’s hopping hoop—a classic dynamics example involving a lightweight ring with a heavy eccentric mass that hops when rolled rapidly or released on an incline, as shown in this [video](/files/Passive_hoop.mp4).
 This hopping behaviour is due to a lifting effect on the hoop created by the large centripetal acceleration of the offset mass.  Building on this idea, we designed a robot that rolls and jumps from flat ground by actuating an internal pendulum at high speed. As shown in the video below, our robot is capable of achieving vertical jumps of 2.4 body lengths.  
 <video controls autoplay muted loop width="600" >
 <source src="/files/vertonly.mp4" type="video/mp4">
 </video>
 
-Additionally, the robot can clear large horizontal distances while in air by achieving a high rolling velocity before initiating a jump.  As shown in the video below, the robot clears over 6 body lengths in air and is able to achieve multiple jumps with minimal recovery time.  
+Additionally, the robot can clear large horizontal distances while in the air by achieving a high rolling velocity before initiating a jump.  As shown in the video below, the robot clears over 6 body lengths in the air and can achieve multiple jumps with minimal recovery time.  
 <video controls autoplay muted loop width="600" >
 <source src="/files/horonly.mp4" type="video/mp4">
 </video>
@@ -93,7 +93,7 @@ For more details, see the following papers:
 
 Underactuated mechanical systems with nonholonomic constraints play a key role in bio-inspired robotics, from snake-like to fish-like designs, and serve as effective reduced-order models for studying their locomotion dynamics.
 For instance, certain aquatic robots exhibit Chaplygin-sleigh-like dynamics, showing figure-eight limit cycles in reduced velocity space under periodic torque, as confirmed by both experiments and simulations.
-Due to their complex dynamics path tracking in such systems is not straightforward. To address this, we developed a reinforcement-learning control framework for a reduced-order model of a bio-inspired swimming robot featuring a passive appendage. Using a Chaplygin sleigh with a passive appendage as a surrogate model, we trained a policy-gradient agent to perform path tracking.
+Due to their complex dynamics, path tracking in such systems is not straightforward. To address this, we developed a reinforcement-learning control framework for a reduced-order model of a bio-inspired swimming robot featuring a passive appendage. Using a Chaplygin sleigh with a passive appendage as a surrogate model, we trained a policy-gradient agent to perform path tracking.
  
 <img src="/files/Overview_curr.png" alt="Rotor controls" width="400">
 <img src="/files/Other_fig.png" alt="Rotor controls" width="400">
