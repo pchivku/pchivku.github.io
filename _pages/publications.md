@@ -7,6 +7,10 @@ author_profile: true
 
 You can also find my publications on my [Google Scholar Profile](https://scholar.google.com/citations?user=1_VCHJAAAAAJ&hl=en&authuser=1).
 
+0. **Agile 3-D Motion Primitives in a Fish-Like Robot** \
+   P. Chivkula, K.Loya, P. Tallapragada. \
+  _IEEE Robotics and Automation Letters_. June 2026. [Paper Link](https://doi.org/10.1109/LRA.2026.3699121)
+
 0. **Spin Swimmer: A fast, efficient and agile swimming robot** \
    P. Chivkula, P. Tallapragada. \
   _IEEE Robotics and Automation Letters_. Sep 2025. [Paper Link](https://doi.org/10.1109/LRA.2025.3606357)
