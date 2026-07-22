@@ -4,7 +4,7 @@ title: "Research"
 permalink: /research/
 author_profile: true
 ---
- <hr style="width:96%;border:solid 1px black;color:#FFFF00;height:1px"> 
+<hr style="width:96%;border:solid 1px black;color:#FFFF00;height:1px"> 
 # Spin Swimmer: A Fast, Efficient and Agile Fish-like Robot
 
 Marine robots play a vital role in modern ocean operations, supporting a wide range of missions such as surveillance, scientific research, and deep-sea exploration. Fish serve as a natural source of inspiration, having evolved efficient ways to move through water. To replicate and understand this efficiency, engineers and scientists have often attempted to mimic the kinematics of fish-like undulatory motion. While most existing designs rely on mechanical linkages or cable-driven systems involving multiple rigid actuators, our work takes a fundamentally new approach. We harness ideas from nonlinear dynamics and design a robot based on the concept of parametric resonance. Our experimental results demonstrate that this is one of the most efficient bio-inspired swimming robots.
