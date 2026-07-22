@@ -1,6 +1,6 @@
 ---
 title: "Spin Swimmer 2.0"
-order: 0
+order: 1
 summary: "Spin Swimmer got wings!"
 thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
 ---
