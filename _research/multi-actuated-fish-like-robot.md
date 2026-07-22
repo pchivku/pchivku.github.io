@@ -1,7 +1,7 @@
 ---
 title: "Spin Swimmer 2.0"
 order: 0
-summary: "An extension of Spin Swimmer with multiple actuation modes for agile three-dimensional locomotion."
+summary: ""
 thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
 ---
 
