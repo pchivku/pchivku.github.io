@@ -1,13 +1,13 @@
 ---
 title: "Differentiable Reinforcement Learning"
-order: 5
+order: 0
 summary: "Differentiable learning of adaptive PID gains for path tracking in swimming robot."
-thumbnail: /files/DiffRL/diffrl-thumbnail.png
+thumbnail_video: /files/DiffRL/S_trim.mp4
 ---
 
 We developed a differentiable reinforcement-learning framework for path tracking in a reduced-order model of a bio-inspired swimming robot. The nonlinear, underactuated dynamics are represented by a modified Chaplygin sleigh.
 
-<img src="/files/DiffRL/diffrl-thumbnail.png" alt="Differentiable reinforcement learning for PID path tracking" width="800">
+<!-- <img src="/files/DiffRL/diffrl-thumbnail.png" alt="Differentiable reinforcement learning for PID path tracking" width="800"> -->
 
 <video autoplay muted loop playsinline controls width="800" poster="/files/DiffRL/diffrl-thumbnail.png"><source src="/files/DiffRL/iros_video_comp%20-%20Trim.mp4" type="video/mp4"></video>
 
