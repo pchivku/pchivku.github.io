@@ -8,11 +8,11 @@ author_profile: true
 You can also find my publications on my [Google Scholar Profile](https://scholar.google.com/citations?user=1_VCHJAAAAAJ&hl=en&authuser=1).
 
 0. **Differentiable Reinforcement Learning for Path Tracking by an Agile Fish-Like Robot** \
-   P. Chivkula, K.Loya,  V.R.R Varikutty P. Tallapragada. \
+   P. Chivkula, K. Loya,  V.R.R. Varikutty P. Tallapragada. \
   _Accepted to IROS 2026_. [Paper Link](https://arxiv.org/abs/2607.16508)
 
 0. **Agile 3-D Motion Primitives in a Fish-Like Robot** \
-   P. Chivkula, K.Loya, P. Tallapragada. \
+   P. Chivkula, K. Loya, P. Tallapragada. \
   _IEEE Robotics and Automation Letters_. June 2026. [Paper Link](https://doi.org/10.1109/LRA.2026.3699121)
 
 0. **Spin Swimmer: A fast, efficient and agile swimming robot** \

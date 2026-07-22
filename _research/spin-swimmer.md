@@ -1,11 +1,12 @@
 ---
 title: "Spin Swimmer"
-order: 1
+order: 2
 summary: "A fast, efficient, and agile fish-like robot driven by parametric resonance."
 thumbnail_video: /files/Spin_swim_strt_small.mp4
 ---
 
-Marine robots support surveillance, scientific research, and deep-sea exploration. While most fish-like robots rely on mechanical linkages or cable-driven systems with multiple rigid actuators, our design uses nonlinear dynamics and parametric resonance. It reaches 2.4 body lengths per second with a cost of transport of 1.02.
+Marine robots play a vital role in modern ocean operations, supporting a wide range of missions such as surveillance, scientific research, and deep-sea exploration. Fish serve as a natural source of inspiration, having evolved efficient ways to move through water. To replicate and understand this efficiency, engineers and scientists have often attempted to mimic the kinematics of fish-like undulatory motion. While most existing designs rely on mechanical linkages or cable-driven systems involving multiple rigid actuators, our work takes a fundamentally new approach. We harness ideas from nonlinear dynamics and design a robot based on the concept of parametric resonance. Our experimental results demonstrate that this is one of the most efficient bio-inspired swimming robots.
+The robot achieves a high swimming speed of 2.4 body lengths per second (BL/s) with a low cost of transport of 1.02, as shown in the video below. 
 
 <video autoplay muted loop playsinline width="800"><source src="/files/Spin_swim_strt_small.mp4" type="video/mp4"></video>
 <video autoplay muted loop playsinline width="800"><source src="/files/Spin_movie_underwater_small.mp4" type="video/mp4"></video>
