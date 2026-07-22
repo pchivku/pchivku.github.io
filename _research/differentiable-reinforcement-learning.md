@@ -1,7 +1,7 @@
 ---
 title: "Differentiable Reinforcement Learning"
 order: 5
-summary: "Differentiable learning of adaptive PID gains for path tracking in an underactuated bio-inspired swimmer."
+summary: "Differentiable learning of adaptive PID gains for path tracking in swimming robot."
 thumbnail: /files/DiffRL/diffrl-thumbnail.png
 ---
 
@@ -11,4 +11,4 @@ We developed a differentiable reinforcement-learning framework for path tracking
 
 <video autoplay muted loop playsinline controls width="800" poster="/files/DiffRL/diffrl-thumbnail.png"><source src="/files/DiffRL/iros_video_comp%20-%20Trim.mp4" type="video/mp4"></video>
 
-Using backpropagation through time, a neural-network controller learns adaptive PID gains directly through the system dynamics. Pure-pursuit guidance supplies the reference heading, while each training episode uses a prescribed constant-velocity target. The resulting controller accurately follows reference trajectories despite the system's nonlinear dynamics.
+Using backpropagation through time, a neural-network controller learns adaptive PID gains directly through the system dynamics. Pure-pursuit guidance supplies the reference heading, while each training episode uses a prescribed constant-velocity target. The resulting controller follows the reference velocity and heading when deployed on the robot. 
