@@ -13,4 +13,4 @@ We developed a differentiable reinforcement learning framework for path tracking
 
 Using backpropagation through time, a neural-network controller learns adaptive PID gains directly through the system dynamics. Pure-pursuit guidance supplies the reference heading, while each training episode uses a prescribed constant-velocity target. The policy trained offline is subsequently deployed on the physical robot to track the reference velocity and heading. 
 
-To learn more about this work, check out our [paper](https://arxiv.org/abs/2607.16508) and for the code check this [repository].
+To learn more about this work, check out our [paper](https://arxiv.org/abs/2607.16508) and for the code check this [repository](https://github.com/kloya03/agilefish-diff-rl.git).
