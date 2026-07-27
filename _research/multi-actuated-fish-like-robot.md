@@ -34,7 +34,7 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       alt="Exploded assembly of the multi-actuated fish-like robot"
       animation-name="ExplodedAssembly"
       camera-controls
-      camera-orbit="-35deg 47deg 110%"
+      camera-orbit="-48deg 47deg 110%"
       touch-action="pan-y"
       rotation-per-second="12deg"
       shadow-intensity="1.8"
