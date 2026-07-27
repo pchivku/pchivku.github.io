@@ -24,16 +24,23 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       camera-controls
       touch-action="pan-y"
       rotation-per-second="12deg"
-      shadow-intensity="1"
+      shadow-intensity="1.8"
+      shadow-softness=".65"
       environment-image="neutral"
-      exposure="1"
+      tone-mapping="aces"
+      exposure=".68"
       interaction-prompt="auto"
       loading="eager">
     </model-viewer>
 
-    <button class="research-model-replay" id="fish-assembly-replay" type="button">
-      Explode view
-    </button>
+    <div class="research-model-controls">
+      <button class="research-model-button" id="fish-assemble" type="button">
+        Assemble
+      </button>
+      <button class="research-model-button" id="fish-explode" type="button">
+        Explode
+      </button>
+    </div>
 
     <p class="research-model-instructions">
       Drag to rotate · Scroll or pinch to zoom
@@ -44,31 +51,36 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
 <script>
   (() => {
     const model = document.querySelector("#fish-assembly-model");
-    const replay = document.querySelector("#fish-assembly-replay");
-
-    let isExploded = false;
+    const assemble = document.querySelector("#fish-assemble");
+    const explode = document.querySelector("#fish-explode");
 
     const showInitialAssembly = () => {
       model.pause();
       model.currentTime = 0;
       model.setAttribute("auto-rotate", "");
+      assemble.disabled = true;
+      explode.disabled = false;
     };
 
-    const toggleAssembly = () => {
+    const playTo = (exploded) => {
       model.removeAttribute("auto-rotate");
       model.pause();
-      model.timeScale = isExploded ? -1 : 1;
-      model.currentTime = isExploded ? model.duration : 0;
+      model.timeScale = exploded ? 1 : -1;
+      model.currentTime = exploded ? 0 : model.duration;
+      assemble.disabled = true;
+      explode.disabled = true;
       model.play({ repetitions: 1 });
     };
 
     model.addEventListener("load", showInitialAssembly);
     model.addEventListener("finished", () => {
-      isExploded = !isExploded;
-      replay.textContent = isExploded ? "Assemble" : "Explode view";
+      const isExploded = model.timeScale > 0;
+      assemble.disabled = !isExploded;
+      explode.disabled = isExploded;
       model.setAttribute("auto-rotate", "");
     });
-    replay.addEventListener("click", toggleAssembly);
+    assemble.addEventListener("click", () => playTo(false));
+    explode.addEventListener("click", () => playTo(true));
   })();
 </script>
 

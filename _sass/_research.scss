@@ -19,8 +19,10 @@
 .research-hero-copy p { margin-top: 0; }
 .research-model-feature { position: relative; width: 320px; max-width: 100%; justify-self: end; }
 .research-model-feature model-viewer { display: block; width: 100%; height: 280px; border: 1px solid #82dcff; border-radius: 10px; background: linear-gradient(180deg, #2dc8ff 0%, #08aeea 48%, #008fd1 100%); box-shadow: 0 8px 24px rgba(0,126,186,.24); --poster-color: #20bff5; --progress-bar-color: #fff; }
-.research-model-replay { position: absolute; top: .75rem; right: .75rem; z-index: 2; padding: .5rem .72rem; border: 1px solid rgba(255,255,255,.65); border-radius: 999px; background: rgba(0,52,78,.72); color: #fff; font: inherit; font-size: .72rem; font-weight: 700; cursor: pointer; backdrop-filter: blur(5px); }
-.research-model-replay:hover, .research-model-replay:focus-visible { background: rgba(0,52,78,.92); }
+.research-model-controls { position: absolute; top: .75rem; right: .75rem; z-index: 2; display: flex; gap: .4rem; }
+.research-model-button { padding: .48rem .68rem; border: 1px solid rgba(255,255,255,.72); border-radius: 999px; background: rgba(0,52,78,.78); color: #fff; font: inherit; font-size: .7rem; font-weight: 700; cursor: pointer; backdrop-filter: blur(5px); }
+.research-model-button:hover, .research-model-button:focus-visible { background: rgba(0,52,78,.96); }
+.research-model-button:disabled { border-color: rgba(255,255,255,.35); background: rgba(0,52,78,.38); color: rgba(255,255,255,.65); cursor: default; }
 .research-model-instructions { margin: .6rem 0 0; color: #5c6470; font-size: .82rem; text-align: center; }
 @media (max-width: 640px) { .research-grid, .research-video-grid { grid-template-columns: 1fr; } }
 @media (max-width: 800px) { .research-hero-grid { grid-template-columns: 1fr; } .research-model-feature { width: min(100%, 360px); } .research-model-feature model-viewer { height: 300px; } }
