@@ -60,10 +60,10 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
     </model-viewer>
 
     <div class="research-model-controls">
-      <button class="research-model-button" id="fish-assemble" type="button" aria-pressed="true">
+      <button class="research-model-button" id="fish-assemble" type="button" aria-pressed="false">
         Assemble
       </button>
-      <button class="research-model-button" id="fish-explode" type="button" aria-pressed="false">
+      <button class="research-model-button" id="fish-explode" type="button" aria-pressed="true">
         Explode
       </button>
     </div>
@@ -85,8 +85,8 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
     const setPoseControls = (isExploded) => {
       assemble.disabled = !isExploded;
       explode.disabled = isExploded;
-      assemble.setAttribute("aria-pressed", String(!isExploded));
-      explode.setAttribute("aria-pressed", String(isExploded));
+      assemble.setAttribute("aria-pressed", String(isExploded));
+      explode.setAttribute("aria-pressed", String(!isExploded));
     };
 
     const showInitialAssembly = () => {
