@@ -1,6 +1,6 @@
 param(
-  [string]$InputPath = "files/AGMPUFL/Fish_assembly.glb",
-  [string]$OutputPath = "files/AGMPUFL/Fish_assembly_exploded.glb"
+  [string]$InputPath = "files/AGMPUFL/Fish_changed.glb",
+  [string]$OutputPath = "files/AGMPUFL/Fish_changed_Exploded.glb"
 )
 
 $ErrorActionPreference = "Stop"
@@ -25,8 +25,24 @@ $jsonLength = [BitConverter]::ToUInt32($bytes, 12)
 $jsonText = [Text.Encoding]::UTF8.GetString($bytes, 20, $jsonLength).TrimEnd([char]0, [char]32)
 $gltf = $jsonText | ConvertFrom-Json
 
-# The exterior body components share the first gray material.
-$gltf.materials[0].pbrMetallicRoughness.metallicFactor = 0.4
+# The main lid, rotor cover, and servo shell share the exterior body material.
+$exteriorNodeNames = @(
+  "C_lid_switch_2holes-1",
+  "Rotor_cover-1",
+  "shell_curve_Servo2-1"
+)
+$exteriorMaterialIndices = foreach ($node in $gltf.nodes) {
+  if ($node.name -in $exteriorNodeNames -and $null -ne $node.mesh) {
+    $gltf.meshes[[int]$node.mesh].primitives |
+      ForEach-Object { [int]$_.material }
+  }
+}
+
+foreach ($materialIndex in @($exteriorMaterialIndices | Select-Object -Unique)) {
+  $material = $gltf.materials[$materialIndex].pbrMetallicRoughness
+  $material.baseColorFactor = @(1.0, 1.0, 1.0, 1.0)
+  $material.metallicFactor = 0.4
+}
 
 $binHeaderOffset = 20 + $jsonLength
 $binLength = [BitConverter]::ToUInt32($bytes, $binHeaderOffset)
@@ -66,7 +82,14 @@ $timeAccessorIndex = $accessors.Count
   max = @(3.0)
 })
 
-$root = $gltf.nodes[1]
+$sceneRootIndices = @($gltf.scenes[[int]$gltf.scene].nodes)
+$rootIndex = $sceneRootIndices |
+  Where-Object { $gltf.nodes[[int]$_].name -eq "Fish_assembly" } |
+  Select-Object -First 1
+if ($null -eq $rootIndex) {
+  throw "Could not find the Fish_assembly scene root."
+}
+$root = $gltf.nodes[[int]$rootIndex]
 $children = @($root.children)
 $center = @(0.704, 0.921, 1.359)
 $channels = [System.Collections.ArrayList]::new()

@@ -30,7 +30,7 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
   <div class="research-model-feature">
     <model-viewer
       id="fish-assembly-model"
-      src="/files/AGMPUFL/Fish_assembly_exploded.glb"
+      src="/files/AGMPUFL/Fish_changed_Exploded.glb"
       alt="Exploded assembly of the multi-actuated fish-like robot"
       animation-name="ExplodedAssembly"
       camera-controls
