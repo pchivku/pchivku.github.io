@@ -40,7 +40,7 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       shadow-softness=".65"
       environment-image="legacy"
       tone-mapping="aces"
-      exposure=".85"
+      exposure=".65"
       interaction-prompt="auto"
       loading="eager">
       <effect-composer render-mode="quality">
@@ -52,9 +52,8 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
         <ssao-effect strength="1.1"></ssao-effect>
         <smaa-effect quality="high"></smaa-effect>
         <color-grade-effect
-          tonemapping="reinhard"
-          contrast=".12"
-          saturation=".15">
+          tonemapping="aces_filmic"
+          contrast=".18">
         </color-grade-effect>
       </effect-composer>
     </model-viewer>
