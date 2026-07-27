@@ -5,9 +5,21 @@ summary: "Spin Swimmer got wings!"
 thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
 ---
 
+<script async src="https://ga.jspm.io/npm:es-module-shims@1.7.1/dist/es-module-shims.js"></script>
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@^0.183.0/build/three.module.min.js"
+    }
+  }
+</script>
 <script
   type="module"
-  src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+  src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js">
+</script>
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js">
 </script>
 
 <div class="research-hero-grid">
@@ -31,6 +43,16 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       exposure=".68"
       interaction-prompt="auto"
       loading="eager">
+      <effect-composer render-mode="quality">
+        <outline-effect
+          color="#163447"
+          strength="1.15"
+          smoothing="2">
+        </outline-effect>
+        <ssao-effect strength="1.1"></ssao-effect>
+        <smaa-effect quality="high"></smaa-effect>
+        <color-grade-effect contrast=".08"></color-grade-effect>
+      </effect-composer>
     </model-viewer>
 
     <div class="research-model-controls">
