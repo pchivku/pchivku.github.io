@@ -45,8 +45,8 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       loading="eager">
       <effect-composer render-mode="quality">
         <outline-effect
-          color="#21e907"
-          strength="1.15"
+          color="#0b0c0b"
+          strength="2"
           smoothing="2">
         </outline-effect>
         <ssao-effect strength="1.1"></ssao-effect>
