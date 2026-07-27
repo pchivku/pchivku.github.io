@@ -52,7 +52,7 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
         <ssao-effect strength="1.1"></ssao-effect>
         <smaa-effect quality="high"></smaa-effect>
         <color-grade-effect
-          tonemapping="aces_filmic"
+          tonemapping="none"
           contrast=".18">
         </color-grade-effect>
       </effect-composer>
