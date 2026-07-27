@@ -40,7 +40,7 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       shadow-softness=".65"
       environment-image="legacy"
       tone-mapping="aces"
-      exposure=".2"
+      exposure=".85"
       interaction-prompt="auto"
       loading="eager">
       <effect-composer render-mode="quality">
