@@ -22,7 +22,9 @@
 .research-model-controls { position: absolute; top: .75rem; right: .75rem; z-index: 2; display: flex; gap: .4rem; }
 .research-model-button { padding: .48rem .68rem; border: 1px solid rgba(255,255,255,.72); border-radius: 999px; background: rgba(0,52,78,.78); color: #fff; font: inherit; font-size: .7rem; font-weight: 700; cursor: pointer; backdrop-filter: blur(5px); }
 .research-model-button:hover, .research-model-button:focus-visible { background: rgba(0,52,78,.96); }
-.research-model-button:disabled { border-color: rgba(255,255,255,.35); background: rgba(0,52,78,.38); color: rgba(255,255,255,.65); cursor: default; }
+.research-model-button[aria-pressed="true"] { border-color: #fff; background: #e9f9ff; color: #063553; box-shadow: 0 0 0 2px rgba(123,220,255,.35); }
+.research-model-button:disabled:not([aria-pressed="true"]) { border-color: rgba(255,255,255,.35); background: rgba(0,52,78,.38); color: rgba(255,255,255,.65); cursor: wait; }
+.research-model-button:disabled[aria-pressed="true"] { cursor: default; }
 .research-model-instructions { margin: .6rem 0 0; color: #5c6470; font-size: .82rem; text-align: center; }
 @media (max-width: 640px) { .research-grid, .research-video-grid { grid-template-columns: 1fr; } }
 @media (max-width: 800px) { .research-hero-grid { grid-template-columns: 1fr; } .research-model-feature { width: min(100%, 360px); } .research-model-feature model-viewer { height: 300px; } }

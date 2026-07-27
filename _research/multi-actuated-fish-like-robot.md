@@ -45,7 +45,7 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       loading="eager">
       <effect-composer render-mode="quality">
         <outline-effect
-          color="#000000"
+          color="#21e907"
           strength="1.15"
           smoothing="2">
         </outline-effect>
@@ -56,10 +56,10 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
     </model-viewer>
 
     <div class="research-model-controls">
-      <button class="research-model-button" id="fish-assemble" type="button">
+      <button class="research-model-button" id="fish-assemble" type="button" aria-pressed="true">
         Assemble
       </button>
-      <button class="research-model-button" id="fish-explode" type="button">
+      <button class="research-model-button" id="fish-explode" type="button" aria-pressed="false">
         Explode
       </button>
     </div>
@@ -77,15 +77,21 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
     const explode = document.querySelector("#fish-explode");
     let animationFrame;
 
+    const setPoseControls = (isExploded) => {
+      assemble.disabled = !isExploded;
+      explode.disabled = isExploded;
+      assemble.setAttribute("aria-pressed", String(!isExploded));
+      explode.setAttribute("aria-pressed", String(isExploded));
+    };
+
     const showInitialAssembly = () => {
       model.pause();
       model.currentTime = 0;
       model.setAttribute("auto-rotate", "");
-      assemble.disabled = true;
-      explode.disabled = false;
+      setPoseControls(false);
     };
 
-    const animateTo = (targetTime) => {
+    const animateTo = (targetTime, isExploded) => {
       cancelAnimationFrame(animationFrame);
       model.removeAttribute("auto-rotate");
       model.pause();
@@ -112,9 +118,9 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
           return;
         }
 
-        const isExploded = targetTime > 0;
-        assemble.disabled = !isExploded;
-        explode.disabled = isExploded;
+        model.pause();
+        model.currentTime = targetTime;
+        setPoseControls(isExploded);
         model.setAttribute("auto-rotate", "");
       };
 
@@ -122,8 +128,11 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
     };
 
     model.addEventListener("load", showInitialAssembly);
-    assemble.addEventListener("click", () => animateTo(0));
-    explode.addEventListener("click", () => animateTo(model.duration));
+    assemble.addEventListener("click", () => animateTo(0, false));
+    explode.addEventListener("click", () => {
+      const explodedTime = Math.max(model.duration - (1 / 60), 0);
+      animateTo(explodedTime, true);
+    });
   })();
 </script>
 
