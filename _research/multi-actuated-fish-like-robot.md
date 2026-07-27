@@ -39,7 +39,7 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       shadow-intensity="1.8"
       shadow-softness=".65"
       environment-image="legacy"
-      tone-mapping="neutral"
+      tone-mapping="aces"
       exposure=".85"
       interaction-prompt="auto"
       loading="eager">
