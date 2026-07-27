@@ -140,6 +140,52 @@ for ($position = 0; $position -lt $children.Count; $position++) {
     $original[2] + ($direction[2] / $length) * $distance
   )
 
+  # Keep paired fins on a clean lateral axis and lift the lid vertically.
+  switch ($node.name) {
+    "Side_fin-1" {
+      $exploded = @(
+        $original[0]
+        ($original[1] - 0.18)
+        $original[2]
+      )
+    }
+    "Side_fin-2" {
+      $exploded = @(
+        $original[0]
+        ($original[1] + 0.18)
+        $original[2]
+      )
+    }
+    "C_lid_switch_2holes-1" {
+      $exploded = @(
+        $original[0]
+        $original[1]
+        ($original[2] + 0.18)
+      )
+    }
+    "Tail_cross-1" {
+      $exploded = @(
+        ($original[0] + 0.18)
+        $original[1]
+        $original[2]
+      )
+    }
+    "Cont_shell_curve_servo_tail4-1" {
+      $exploded = @(
+        ($original[0] + 0.18)
+        $original[1]
+        $original[2]
+      )
+    }
+    "Cont_shell_curve_servo_horn_correct-1" {
+      $exploded = @(
+        $original[0]
+        $original[1]
+        ($original[2] - 0.18)
+      )
+    }
+  }
+
   $outputByteOffset = $binLength + $animationBytes.Count
   foreach ($value in $original) { Add-Float32 $animationBytes ([float]$value) }
   foreach ($value in $exploded) { Add-Float32 $animationBytes ([float]$value) }
