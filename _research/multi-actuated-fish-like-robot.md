@@ -53,6 +53,7 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
     const model = document.querySelector("#fish-assembly-model");
     const assemble = document.querySelector("#fish-assemble");
     const explode = document.querySelector("#fish-explode");
+    let animationFrame;
 
     const showInitialAssembly = () => {
       model.pause();
@@ -62,25 +63,45 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       explode.disabled = false;
     };
 
-    const playTo = (exploded) => {
+    const animateTo = (targetTime) => {
+      cancelAnimationFrame(animationFrame);
       model.removeAttribute("auto-rotate");
       model.pause();
-      model.timeScale = exploded ? 1 : -1;
-      model.currentTime = exploded ? 0 : model.duration;
+
+      const startTime = model.currentTime;
+      const distance = Math.abs(targetTime - startTime);
+      if (distance < 0.001) return;
+
+      const animationDuration = 1400 * (distance / model.duration);
+      const startedAt = performance.now();
       assemble.disabled = true;
       explode.disabled = true;
-      model.play({ repetitions: 1 });
+
+      const step = (now) => {
+        const progress = Math.min((now - startedAt) / animationDuration, 1);
+        const eased = progress < .5
+          ? 2 * progress * progress
+          : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+        model.currentTime = startTime + (targetTime - startTime) * eased;
+
+        if (progress < 1) {
+          animationFrame = requestAnimationFrame(step);
+          return;
+        }
+
+        const isExploded = targetTime > 0;
+        assemble.disabled = !isExploded;
+        explode.disabled = isExploded;
+        model.setAttribute("auto-rotate", "");
+      };
+
+      animationFrame = requestAnimationFrame(step);
     };
 
     model.addEventListener("load", showInitialAssembly);
-    model.addEventListener("finished", () => {
-      const isExploded = model.timeScale > 0;
-      assemble.disabled = !isExploded;
-      explode.disabled = isExploded;
-      model.setAttribute("auto-rotate", "");
-    });
-    assemble.addEventListener("click", () => playTo(false));
-    explode.addEventListener("click", () => playTo(true));
+    assemble.addEventListener("click", () => animateTo(0));
+    explode.addEventListener("click", () => animateTo(model.duration));
   })();
 </script>
 
