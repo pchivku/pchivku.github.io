@@ -25,6 +25,9 @@ $jsonLength = [BitConverter]::ToUInt32($bytes, 12)
 $jsonText = [Text.Encoding]::UTF8.GetString($bytes, 20, $jsonLength).TrimEnd([char]0, [char]32)
 $gltf = $jsonText | ConvertFrom-Json
 
+# The exterior body components share the first gray material.
+$gltf.materials[0].pbrMetallicRoughness.metallicFactor = 0.4
+
 $binHeaderOffset = 20 + $jsonLength
 $binLength = [BitConverter]::ToUInt32($bytes, $binHeaderOffset)
 $binType = [BitConverter]::ToUInt32($bytes, $binHeaderOffset + 4)

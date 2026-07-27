@@ -38,7 +38,7 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       rotation-per-second="12deg"
       shadow-intensity="1.8"
       shadow-softness=".65"
-      environment-image="legacy"
+      environment-image="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/whipple_creek_regional_park_04_1k.hdr"
       tone-mapping="aces"
       exposure=".65"
       interaction-prompt="auto"
