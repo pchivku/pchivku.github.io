@@ -34,7 +34,7 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       alt="Exploded assembly of the multi-actuated fish-like robot"
       animation-name="ExplodedAssembly"
       camera-controls
-      camera-orbit="auto auto 110%"
+      camera-orbit="20deg 58deg 110%"
       touch-action="pan-y"
       rotation-per-second="12deg"
       shadow-intensity="1.8"
@@ -80,6 +80,7 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
     const assemble = document.querySelector("#fish-assemble");
     const explode = document.querySelector("#fish-explode");
     let animationFrame;
+    let assembledRadius;
 
     const setPoseControls = (isExploded) => {
       assemble.disabled = !isExploded;
@@ -92,6 +93,7 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       model.pause();
       model.currentTime = 0;
       model.setAttribute("auto-rotate", "");
+      assembledRadius = model.getCameraOrbit().radius;
       setPoseControls(false);
     };
 
@@ -101,8 +103,8 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       model.pause();
 
       const orbit = model.getCameraOrbit();
-      const distance = isExploded ? "145%" : "110%";
-      model.cameraOrbit = `${orbit.theta}rad ${orbit.phi}rad ${distance}`;
+      const radius = isExploded ? assembledRadius * 2.25 : assembledRadius;
+      model.cameraOrbit = `${orbit.theta}rad ${orbit.phi}rad ${radius}m`;
 
       const startTime = model.currentTime;
       const timelineDistance = Math.abs(targetTime - startTime);

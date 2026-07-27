@@ -144,16 +144,16 @@ for ($position = 0; $position -lt $children.Count; $position++) {
   switch ($node.name) {
     "Side_fin-1" {
       $exploded = @(
-        ($original[0] - 0.18)
+        $original[0]
         $original[1]
-        $original[2]
+        ($original[2] - 0.18)
       )
     }
     "Side_fin-2" {
       $exploded = @(
-        ($original[0] + 0.18)
+        $original[0]
         $original[1]
-        $original[2]
+        ($original[2] + 0.18)
       )
     }
     "C_lid_switch_2holes-1" {
