@@ -38,8 +38,8 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
       rotation-per-second="12deg"
       shadow-intensity="1.8"
       shadow-softness=".65"
-      environment-image="legacy"
-      tone-mapping="aces"
+      environment-image="neutral"
+      tone-mapping="neutral"
       exposure=".85"
       interaction-prompt="auto"
       loading="eager">
@@ -51,7 +51,11 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
         </outline-effect>
         <ssao-effect strength="1.1"></ssao-effect>
         <smaa-effect quality="high"></smaa-effect>
-        <color-grade-effect contrast=".18"></color-grade-effect>
+        <color-grade-effect
+          tonemapping="reinhard"
+          contrast=".12"
+          saturation=".15">
+        </color-grade-effect>
       </effect-composer>
     </model-viewer>
 

@@ -18,7 +18,7 @@
 .research-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; align-items: start; gap: 1.5rem; margin: 1rem 0 2rem; }
 .research-hero-copy p { margin-top: 0; }
 .research-model-feature { position: relative; width: 320px; max-width: 100%; justify-self: end; }
-.research-model-feature model-viewer { display: block; width: 100%; height: 280px; border: 1px solid #82dcff; border-radius: 10px; background: linear-gradient(180deg, #2dc8ff 0%, #08aeea 48%, #008fd1 100%); box-shadow: 0 8px 24px rgba(0,126,186,.24); --poster-color: #20bff5; --progress-bar-color: #fff; }
+.research-model-feature model-viewer { display: block; width: 100%; height: 280px; border: 1px solid #286f9b; border-radius: 10px; background: linear-gradient(180deg, #123f68 0%, #082f52 52%, #041f38 100%); box-shadow: 0 8px 24px rgba(2,31,55,.32); --poster-color: #082f52; --progress-bar-color: #7bdcff; }
 .research-model-controls { position: absolute; top: .75rem; right: .75rem; z-index: 2; display: flex; gap: .4rem; }
 .research-model-button { padding: .48rem .68rem; border: 1px solid rgba(255,255,255,.72); border-radius: 999px; background: rgba(0,52,78,.78); color: #fff; font: inherit; font-size: .7rem; font-weight: 700; cursor: pointer; backdrop-filter: blur(5px); }
 .research-model-button:hover, .research-model-button:focus-visible { background: rgba(0,52,78,.96); }
