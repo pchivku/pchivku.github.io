@@ -144,15 +144,15 @@ for ($position = 0; $position -lt $children.Count; $position++) {
   switch ($node.name) {
     "Side_fin-1" {
       $exploded = @(
-        $original[0]
-        ($original[1] - 0.18)
+        ($original[0] - 0.18)
+        $original[1]
         $original[2]
       )
     }
     "Side_fin-2" {
       $exploded = @(
-        $original[0]
-        ($original[1] + 0.18)
+        ($original[0] + 0.18)
+        $original[1]
         $original[2]
       )
     }
@@ -165,14 +165,14 @@ for ($position = 0; $position -lt $children.Count; $position++) {
     }
     "Tail_cross-1" {
       $exploded = @(
-        ($original[0] + 0.18)
+        ($original[0] + 0.24)
         $original[1]
         $original[2]
       )
     }
     "Cont_shell_curve_servo_tail4-1" {
       $exploded = @(
-        ($original[0] + 0.18)
+        ($original[0] + 0.12)
         $original[1]
         $original[2]
       )
