@@ -15,8 +15,12 @@
 .research-video-tile video { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
 .research-video-feature { width: 800px; max-width: 100%; margin: 1.25rem auto 1.75rem; overflow: hidden; border-radius: 8px; background: #111820; box-shadow: 0 2px 10px rgba(20,31,44,.1); }
 .research-video-feature video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
-.research-model-feature { width: 800px; max-width: 100%; margin: 1.25rem auto 1.75rem; }
-.research-model-feature model-viewer { display: block; width: 100%; height: min(65vh, 600px); min-height: 420px; border: 1px solid #e3e6e8; border-radius: 8px; background: #eef2f5; box-shadow: 0 2px 10px rgba(20,31,44,.1); --poster-color: #eef2f5; --progress-bar-color: #1769aa; }
+.research-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, .95fr); align-items: start; gap: 1.75rem; margin: 1rem 0 2rem; }
+.research-hero-copy p { margin-top: 0; }
+.research-model-feature { position: relative; width: 100%; max-width: 100%; }
+.research-model-feature model-viewer { display: block; width: 100%; height: 420px; border: 1px solid rgba(117,196,230,.45); border-radius: 10px; background: linear-gradient(180deg, #1f90c2 0%, #0876aa 42%, #04577f 100%); box-shadow: 0 10px 30px rgba(0,73,109,.22); --poster-color: #0876aa; --progress-bar-color: #b9efff; }
+.research-model-replay { position: absolute; top: .75rem; right: .75rem; z-index: 2; padding: .5rem .72rem; border: 1px solid rgba(255,255,255,.65); border-radius: 999px; background: rgba(0,52,78,.72); color: #fff; font: inherit; font-size: .72rem; font-weight: 700; cursor: pointer; backdrop-filter: blur(5px); }
+.research-model-replay:hover, .research-model-replay:focus-visible { background: rgba(0,52,78,.92); }
 .research-model-instructions { margin: .6rem 0 0; color: #5c6470; font-size: .82rem; text-align: center; }
 @media (max-width: 640px) { .research-grid, .research-video-grid { grid-template-columns: 1fr; } }
-@media (max-width: 640px) { .research-model-feature model-viewer { height: 60vh; min-height: 340px; } }
+@media (max-width: 800px) { .research-hero-grid { grid-template-columns: 1fr; } .research-model-feature model-viewer { height: min(65vh, 440px); min-height: 340px; } }
