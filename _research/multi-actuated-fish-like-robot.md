@@ -101,7 +101,10 @@ thumbnail_video: /files/AGMPUFL/Multiple_barrel_rolls_trim.mp4
 
     model.addEventListener("load", showInitialAssembly);
     assemble.addEventListener("click", () => animateTo(0));
-    explode.addEventListener("click", () => animateTo(model.duration));
+    explode.addEventListener("click", () => {
+      const explodedTime = Math.max(model.duration - .001, 0);
+      animateTo(explodedTime);
+    });
   })();
 </script>
 
